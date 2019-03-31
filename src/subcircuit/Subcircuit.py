@@ -1,9 +1,9 @@
 from PyQt4 import QtCore, QtGui
 from configuration.Appconfig import Appconfig
 from projManagement.Validation import Validation
-from subcircuit.newSub import NewSub
-from subcircuit.openSub import openSub
-from subcircuit.convertSub import convertSub
+from .subcircuit.newSub import NewSub
+from .subcircuit.openSub import openSub
+from .subcircuit.convertSub import convertSub
 
 class Subcircuit(QtGui.QWidget):
     """
@@ -53,7 +53,7 @@ class Subcircuit(QtGui.QWidget):
             self.subcircuit.createSubcircuit(self.schematic_name)
             
         else:
-            print "Sub circuit creation cancelled"
+            print("Sub circuit creation cancelled")
         
         
     def editsch(self):
